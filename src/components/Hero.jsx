@@ -27,14 +27,17 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex justify-center gap-6">
-          <a href="tel:+919561742305">
+          <a href="https://wa.me/9561742305"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline">
             <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold px-8 py-3 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(74,222,128,0.5)]">
               Contact Me
             </button>
           </a>
 
           <button
-            onClick={() => window.open("/Nadim - Front-End 8m exp.docx", "_blank")}
+            onClick={() => window.open("/SWAPNIL_AVHALE.pdf", "_blank")}
             className="bg-transparent border-2 border-green-400 text-green-400 font-semibold px-8 py-3 rounded-full transform transition-all duration-300 hover:bg-green-400/10 hover:scale-105"
           >
             Resume

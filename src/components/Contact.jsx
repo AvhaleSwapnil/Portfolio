@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; // Form is valid if no errors
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (event) => {

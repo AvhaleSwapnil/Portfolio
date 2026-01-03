@@ -65,7 +65,7 @@ const About = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-6 mt-12 text-center border-t border-gray-800 pt-8">
+            {/* <div className="grid grid-cols-3 gap-6 mt-12 text-center border-t border-gray-800 pt-8">
               <div>
                 <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                   1+
@@ -84,7 +84,7 @@ const About = () => {
                 </h3>
                 <p className="text-sm text-gray-400 mt-1">Happy Clients</p>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

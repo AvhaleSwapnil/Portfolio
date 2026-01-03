@@ -21,9 +21,6 @@ const Navbar = () => {
           <a href="#about" className="hover:text-green-400 transition-colors duration-300">
             About Me
           </a>
-          <a href="#service" className="hover:text-green-400 transition-colors duration-300">
-            Services
-          </a>
           <a href="#experience" className="hover:text-green-400 transition-colors duration-300">
             Experience
           </a>
@@ -34,17 +31,6 @@ const Navbar = () => {
             Contact
           </a>
 
-          {/* Connect Me button for larger screens */}
-          <a
-            href="https://wa.me/9561742305"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline"
-          >
-            <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full font-medium shadow-lg hover:shadow-green-500/20">
-              Connect Me
-            </button>
-          </a>
         </div>
 
         {/* Hamburger menu button for small screens */}
@@ -69,9 +55,6 @@ const Navbar = () => {
           </a>
           <a href="#about" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
             About Me
-          </a>
-          <a href="#service" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
-            Services
           </a>
           <a href="#experience" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
             Experience
