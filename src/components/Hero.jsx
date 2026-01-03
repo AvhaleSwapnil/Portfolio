@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import mypic from "../assets/mypic.jpeg";
-
 const Hero = () => {
   return (
     <div className="bg-black text-white text-center py-16">
       <img
-        src={mypic}
+        src="/assets/mypic.jpeg"
         alt=""
         className="mx-auto mb-8 w-48 h-48  rounded-full object-cover transform 
         transition-transform duration-300 hover:scale-105"
@@ -41,7 +39,7 @@ const Hero = () => {
           Resume
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

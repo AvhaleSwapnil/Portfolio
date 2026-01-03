@@ -1,15 +1,10 @@
 import React from "react";
-import duckhunt from "../assets/duckhunt.webp";
-import ecommerce from "../assets/ecommerce.jpg";
-import shootgame from "../assets/shootgame.jpg";
-
-
 const projects = [
   {
     id: 1,
     name: "Duck Hunt",
     technologies: "",
-     image:duckhunt,
+    image: "/assets/duckhunt.webp",
     github: "https://github.com/Nadim12334/Duckhunt-Game",
     visit: "/Duckhunt/duckhunt.html"
   },
@@ -17,18 +12,18 @@ const projects = [
     id: 2,
     name: "E-commerce",
     technologies: "",
-    image: ecommerce,
+    image: "/assets/ecommerce.jpg",
     github: "https://github.com/Nadim12334/E-Commerce-Website",
-    visit:"/E-commerce/productscartui.html"
+    visit: "/E-commerce/productscartui.html"
   },
   {
     id: 3,
     name: "Shootgame",
     technologies: "",
-    image: shootgame,
+    image: "/assets/shootgame.jpg",
     github: "https://github.com/Nadim12334/Shootgame",
     visit: "/shootgame/shootgame.html"
-    
+
   },
 ];
 
@@ -46,12 +41,12 @@ const Projects = () => {
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
               <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
+              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
 
-             <a href={project.visit} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 m-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">Visit</a>
+              <a href={project.visit} className="inline-block bg-gradient-to-r 
+              from-green-400 to-blue-500 text-white px-4 py-2 m-2 rounded-full" target="_blank"
+                rel="noopener noreferrer">Visit</a>
 
             </div>
           ))}
