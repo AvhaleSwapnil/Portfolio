@@ -24,6 +24,9 @@ const Navbar = () => {
           <a href="#service" className="hover:text-gray-400">
             Services
           </a>
+          <a href="#experience" className="hover:text-gray-400">
+            Experience
+          </a>
           <a href="#project" className="hover:text-gray-400">
             Projects
           </a>
@@ -63,6 +66,9 @@ const Navbar = () => {
             </a>
             <a href="#service" className="hover:text-gray-400">
               Services
+            </a>
+            <a href="#experience" className="hover:text-gray-400">
+              Experience
             </a>
             <a href="#project" className="hover:text-gray-400">
               Projects

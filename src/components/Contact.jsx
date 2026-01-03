@@ -55,16 +55,16 @@ const Contact = () => {
             >
               Let's Talk
             </h3>
-            <p>I'm open to discussing web development projects or partnership opportunities.</p>
+            <p>I am actively seeking opportunities to join a company as a Software Engineer.</p>
             <div className="mb-4 mt-8">
               <FaEnvelope className="inline-block text-green-400 mr-2" />
-              <a href="mailto:pnadim275@gmail.com" className="hover:underline">
-                pnadim275@gmail.com
+              <a href="mailto:swapnilavhale460@gmail.com" className="hover:underline">
+                swapnilavhale460@gmail.com
               </a>
             </div>
             <div className="mb-4">
               <FaPhone className="inline-block text-green-400 mr-2" />
-              <span>+917040545840</span>
+              <span>+91 9561742305</span>
             </div>
             <div className="mb-4">
               <FaMapMarkedAlt className="inline-block text-green-400 mr-2" />
