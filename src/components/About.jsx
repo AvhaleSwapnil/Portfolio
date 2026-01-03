@@ -1,114 +1,92 @@
 import React from "react";
+
 const About = () => {
   return (
-    <div className="bg-black text-white py-20" id="about">
+    <div className="bg-black text-white py-24" id="about">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div className="flex flex-col md:flex-row items-center md:space-x-12">
-          <img
-            src="/assets/mypic.jpeg"
-            alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
-          />
-          <div className="flex-1">
-            <p className="text-lg mb-8">
-              I am a passionate frontend developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in frontend  technologies, I strive to create
-              seamless and efficient user experiences.
+
+        {/* Header */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          About <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Me</span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-start md:space-x-16">
+
+          {/* Image Side */}
+          <div className="w-full md:w-5/12 mb-12 md:mb-0 relative group">
+            <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <img
+              src="/assets/mypic.jpeg"
+              alt="Profile"
+              className="relative w-full h-[400px] object-cover rounded-2xl shadow-2xl z-10 grayscale hover:grayscale-0 transition-all duration-500"
+            />
+          </div>
+
+          {/* Content Side */}
+          <div className="w-full md:w-7/12 flex flex-col justify-center">
+            <p className="text-xl leading-relaxed text-gray-300 mb-8">
+              I am a passionate <span className="text-green-400 font-semibold">Software Engineer</span> with a deep focus on crafting modern, high-performance web applications. My journey is defined by a relentless drive to solve complex problems through clean and efficient code.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
+
+            {/* Skills Progress Bars */}
+            <div className="space-y-6 pt-4">
+
+              {/* Skill Item */}
+              <div className="group">
+                <div className="flex justify-between mb-2">
+                  <span className="font-medium text-gray-300">Frontend Development (React, Next.js)</span>
+                  <span className="text-green-400">95%</span>
                 </div>
-              </div>
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  JavaScript
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  JSon, jQuery, Bootstrap, Tailwind CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Typescript
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
+                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                  <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full w-[95%] shadow-[0_0_10px_rgba(74,222,128,0.5)] transform origin-left transition-transform duration-1000 scale-x-0 group-hover:scale-x-100 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}></div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-8">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Next.js
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
+              {/* Skill Item */}
+              <div className="group">
+                <div className="flex justify-between mb-2">
+                  <span className="font-medium text-gray-300">Styling (Tailwind CSS, CSS3)</span>
+                  <span className="text-green-400">90%</span>
+                </div>
+                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                  <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full w-[90%] shadow-[0_0_10px_rgba(74,222,128,0.5)] transform origin-left transition-transform duration-1000 scale-x-0 group-hover:scale-x-100 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}></div>
+                </div>
+              </div>
+
+              {/* Skill Item */}
+              <div className="group">
+                <div className="flex justify-between mb-2">
+                  <span className="font-medium text-gray-300">JavaScript / TypeScript</span>
+                  <span className="text-green-400">85%</span>
+                </div>
+                <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                  <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full w-[85%] shadow-[0_0_10px_rgba(74,222,128,0.5)] transform origin-left transition-transform duration-1000 scale-x-0 group-hover:scale-x-100 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}></div>
                 </div>
               </div>
             </div>
-            {/* <div className="mt-12 flex justify-center text-center"> */}
-            {/* <div>
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                  8 Months
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-3 gap-6 mt-12 text-center border-t border-gray-800 pt-8">
+              <div>
+                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                  1+
                 </h3>
-                <p> Experience</p>
-              </div> */}
-            {/* <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        50+
-                    </h3>
-                    <p>Projects Completed</p>
-                </div> */}
-            {/* <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Happy Clients</p>
-                </div> */}
-            {/* </div> */}
+                <p className="text-sm text-gray-400 mt-1">Years Experience</p>
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                  10+
+                </h3>
+                <p className="text-sm text-gray-400 mt-1">Projects Built</p>
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                  5+
+                </h3>
+                <p className="text-sm text-gray-400 mt-1">Happy Clients</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
