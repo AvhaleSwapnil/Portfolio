@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react'
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 import { nameRegex } from '../constants/regularexpressions'
@@ -81,9 +82,8 @@ const Contact = () => {
                   name="name"
                   value={credentials.name}
                   onChange={handleChange}
-                  className={`w-full p-2 rounded bg-gray-800 border ${
-                    errors.name ? "border-red-500" : "border-gray-600"
-                  } focus:outline-none focus:border-green-400`}
+                  className={`w-full p-2 rounded bg-gray-800 border ${errors.name ? "border-red-500" : "border-gray-600"
+                    } focus:outline-none focus:border-green-400`}
                   placeholder="Enter Your Name"
                 />
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -97,9 +97,8 @@ const Contact = () => {
                   name="email"
                   value={credentials.email}
                   onChange={handleChange}
-                  className={`w-full p-2 rounded bg-gray-800 border ${
-                    errors.email ? "border-red-500" : "border-gray-600"
-                  } focus:outline-none focus:border-green-400`}
+                  className={`w-full p-2 rounded bg-gray-800 border ${errors.email ? "border-red-500" : "border-gray-600"
+                    } focus:outline-none focus:border-green-400`}
                   placeholder="Enter Your Email"
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -112,9 +111,8 @@ const Contact = () => {
                   name="message"
                   value={credentials.message}
                   onChange={handleChange}
-                  className={`w-full p-2 rounded bg-gray-800 border ${
-                    errors.message ? "border-red-500" : "border-gray-600"
-                  } focus:outline-none focus:border-green-400`}
+                  className={`w-full p-2 rounded bg-gray-800 border ${errors.message ? "border-red-500" : "border-gray-600"
+                    } focus:outline-none focus:border-green-400`}
                   rows="5"
                   placeholder="Enter Your Message"
                 />
