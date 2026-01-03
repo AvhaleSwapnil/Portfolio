@@ -2,29 +2,29 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    name: "Duck Hunt",
-    technologies: "",
+    name: "MERN Real Estate Platform",
+    technologies: "React.js, Node.js, MongoDB, Express.js JWT, Tailwind CSS",
     image: "/assets/duckhunt.webp",
-    github: "https://github.com/Nadim12334/Duckhunt-Game",
-    visit: "/Duckhunt/duckhunt.html"
+    github: "https://github.com/AvhaleSwapnil/Mern-Estate",
+    visit: "https://mern-estate-8d10.onrender.com/"
   },
-  {
-    id: 2,
-    name: "E-commerce",
-    technologies: "",
-    image: "/assets/ecommerce.jpg",
-    github: "https://github.com/Nadim12334/E-Commerce-Website",
-    visit: "/E-commerce/productscartui.html"
-  },
-  {
-    id: 3,
-    name: "Shootgame",
-    technologies: "",
-    image: "/assets/shootgame.jpg",
-    github: "https://github.com/Nadim12334/Shootgame",
-    visit: "/shootgame/shootgame.html"
+  // {
+  //   id: 2,
+  //   name: "MERN Note-Taking App",
+  //   technologies: "",
+  //   image: "/assets/ecommerce.jpg",
+  //   github: "https://github.com/Nadim12334/E-Commerce-Website",
+  //   visit: "/E-commerce/productscartui.html"
+  // },
+  // {
+  //   id: 3,
+  //   name: "Shootgame",
+  //   technologies: "",
+  //   image: "/assets/shootgame.jpg",
+  //   github: "https://github.com/Nadim12334/Shootgame",
+  //   visit: "/shootgame/shootgame.html"
 
-  },
+  // },
 ];
 
 const Projects = () => {

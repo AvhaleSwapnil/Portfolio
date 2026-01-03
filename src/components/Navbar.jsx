@@ -21,9 +21,6 @@ const Navbar = () => {
           <a href="#about" className="hover:text-green-400 transition-colors duration-300">
             About Me
           </a>
-          <a href="#service" className="hover:text-green-400 transition-colors duration-300">
-            Services
-          </a>
           <a href="#experience" className="hover:text-green-400 transition-colors duration-300">
             Experience
           </a>
@@ -69,9 +66,6 @@ const Navbar = () => {
           </a>
           <a href="#about" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
             About Me
-          </a>
-          <a href="#service" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
-            Services
           </a>
           <a href="#experience" onClick={toggleMenu} className="text-xl hover:text-green-400 transition-colors">
             Experience
