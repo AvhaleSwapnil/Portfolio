@@ -31,17 +31,6 @@ const Navbar = () => {
             Contact
           </a>
 
-          {/* Connect Me button for larger screens */}
-          <a
-            href="https://wa.me/9561742305"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline"
-          >
-            <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full font-medium shadow-lg hover:shadow-green-500/20">
-              Connect Me
-            </button>
-          </a>
         </div>
 
         {/* Hamburger menu button for small screens */}
