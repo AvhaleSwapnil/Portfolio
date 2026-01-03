@@ -3,17 +3,19 @@ import React from "react";
 const experiences = [
     {
         id: 1,
-        role: "Frontend Developer",
-        company: "Tech Solutions Inc.",
-        description: "Leading the frontend development of scalable web applications. Implemented responsive designs and optimized performance by 40%.",
-        tech: ["React", "Next.js", "Tailwind CSS", "Redux"],
+        role: "Software Engineer",
+        company: "Athang Infotech",
+        duration: "Nov 2025 - Present",
+        description: "Contributed to building scalable web applications by developing responsive UIs, creating backend APIs, integrating RESTful services, and optimizing performance to ensure efficient and reliable application functionality.",
+        tech: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn/ui", "Node.js", "Express.js", "MySQL(Basic)", "Redux"],
     },
     {
         id: 2,
-        role: "Web Developer Intern",
-        company: "Creative Digital Agency",
-        description: "Assisted in building client websites, fixing bugs, and collaborating with designers to implement UI components.",
-        tech: ["HTML", "CSS", "JavaScript", "Figma"],
+        role: "Frontend Developer Intern",
+        company: "HACKTECH",
+        duration: "Jan 2025 - Mar 2025",
+        description: "Developed responsive and user-friendly interfaces using React.js, JavaScript, and Tailwind CSS. Collaborated closely with backend teams to integrate RESTful APIs, ensuring smooth data flow and improved UI performance.",
+        tech: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
 ];
 
@@ -28,8 +30,9 @@ const Experience = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                     {experiences.map((experience) => (
                         <div key={experience.id} className="bg-gray-900/80 p-6 rounded-xl border border-gray-700 shadow-lg hover:shadow-2xl hover:border-green-400 transition-all duration-300 transform hover:-translate-y-2">
-                            <h3 className="text-xl font-bold text-white mb-2">{experience.role}</h3>
-                            <p className="text-lg text-green-400 font-semibold mb-4">{experience.company}</p>
+                            <h3 className="text-xl font-bold text-white mb-1">{experience.role}</h3>
+                            <p className="text-lg text-green-400 font-semibold mb-1">{experience.company}</p>
+                            <p className="text-gray-400 text-sm italic mb-4">{experience.duration}</p>
 
                             <p className="text-gray-300 mb-6 text-sm leading-relaxed h-20 overflow-hidden">
                                 {experience.description}

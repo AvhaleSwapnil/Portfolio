@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white text-center py-16 h-screen flex flex-col justify-center relative overflow-hidden">
+    <div className="bg-black text-white text-center min-h-screen py-24 md:py-16 flex flex-col justify-center relative overflow-hidden" id="home">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-green-500/10 rounded-full blur-[100px]" />
@@ -16,14 +16,14 @@ const Hero = () => {
           alt="Swapnil Avhale"
           className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-4 border-green-500/20 shadow-2xl animate-float"
         />
-        <h1 className="text-5xl md:text-6xl font-bold font-sans tracking-tight mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold font-sans tracking-tight mb-4">
           I'm{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
             Swapnil Avhale
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 font-light mb-8 max-w-2xl mx-auto px-4">
-          Software Engineer specializing in building exceptional digital experiences.
+          Software Engineer focused on delivering exceptional digital experiences through modern web technologies.
         </p>
 
         <div className="mt-8 flex justify-center gap-6">
