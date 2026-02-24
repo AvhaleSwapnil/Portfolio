@@ -8,23 +8,14 @@ const projects = [
     github: "https://github.com/AvhaleSwapnil/Mern-Estate",
     visit: "https://mern-estate-8d10.onrender.com/"
   },
-  // {
-  //   id: 2,
-  //   name: "MERN Note-Taking App",
-  //   technologies: "",
-  //   image: "/assets/ecommerce.jpg",
-  //   github: "https://github.com/Nadim12334/E-Commerce-Website",
-  //   visit: "/E-commerce/productscartui.html"
-  // },
-  // {
-  //   id: 3,
-  //   name: "Shootgame",
-  //   technologies: "",
-  //   image: "/assets/shootgame.jpg",
-  //   github: "https://github.com/Nadim12334/Shootgame",
-  //   visit: "/shootgame/shootgame.html"
-
-  // },
+  {
+    id: 2,
+    name: "Flashcard Pro",
+    technologies: "Next.js, Tailwind CSS",
+    image: "/assets/flashcard.png",
+    github: "https://github.com/AvhaleSwapnil/Flashcard",
+    visit: "https://flashcard-ten-lyart-69.vercel.app/"
+  }
 ];
 
 const Projects = () => {
